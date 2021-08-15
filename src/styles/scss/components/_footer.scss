@@ -1,0 +1,8 @@
+.footer {
+    @include container;
+    background-color: #263640;
+    color: #fff;
+    .logo {
+        color: #fff;
+    }
+}

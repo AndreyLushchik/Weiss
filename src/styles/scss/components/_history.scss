@@ -1,0 +1,71 @@
+.history {
+    @include container;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 83vh;
+}
+.history__article--background {
+    background-color: #263640;
+    width: 80%;
+    min-width: 320px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2), -50px 100px 0px #F5F8FA;
+    z-index: -1;
+    .history__article {
+        position: relative;
+        width: 50%;
+        padding: 98px 0 74px 10%;
+        min-width: 320px;
+        .history__subtitle {
+            @include subtitle;
+        }
+        .history__title {
+            @include title;
+            font-size: 3.2em;
+            letter-spacing: 44 / 32 * 100%;
+            color: #fff;
+            padding: 24px 0;
+        }
+        .history__text {
+            @include text;
+            position: relative;
+            color: #fff;
+            padding: 24px 0;
+            padding-bottom: 48px;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background-color: #ffffff20;
+                left: 0;
+                top: 90%;
+            }
+        }
+        .history__link {
+            @include nonelink;
+            @include text;
+            position: relative;
+            padding: 5px 0;
+            padding-right: 38px;
+            color: #FF9900;
+            transition: 0.3s;
+            &::after {
+                content: '';
+                position: absolute;
+                background: url('../../images/VectorOrange.svg') no-repeat;
+                background-size: 100%;
+                height: 12px;
+                width: 7.41px;
+                top: calc(50% - 5px);
+                right: 0;
+            }
+        }
+    }
+}
+.history__image{
+    position: absolute;
+    width: 39%;
+    top: 208px;
+    right: 120px;
+}

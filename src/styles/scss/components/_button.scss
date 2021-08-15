@@ -1,0 +1,38 @@
+.button {
+    position: relative;
+    background-color: #FF9900;
+    border: none;
+    padding: 5px 60px 5px 24px;
+    color: #fff;
+    font-family: $din;
+    font-size: 1.6em;
+    font-weight: 700;
+    line-height: 40 / 20 * 100%;
+    transition: 0.3s;
+    &:hover {
+        background-color: #d17d00;
+
+    }
+}
+
+.chevron__button::after {
+    content: '';
+    position: absolute;
+    height: 12px;
+    width: 7.41px;
+    top: calc(50% - 6px);
+    right: 24px;
+    background: url('../../images/Vector.svg') no-repeat;
+    background-size: 100%;
+}
+
+.button--mail::after{
+    content: '';
+    position: absolute;
+    background: url('../../images/mail_outline_24px.svg') no-repeat;
+    background-size: 100%;
+    width: 20px; /*20px*/
+    height: 20px;
+    top: calc(50% - 10px);
+    right: 24px;
+}

@@ -1,0 +1,35 @@
+.nav {
+    @include container;
+    margin-top: 64px;
+
+}
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: calc(12px + 1.4vw);
+    padding: 0 0 0 55px;
+    .nav__link {
+        @include nonelink;
+        position: relative;
+        color: #263640;
+        font-family: $din;
+        font-size: 1.6em;
+        font-weight: 600;
+        line-height: 40 / 16 * 100%;
+        transition: 0.3s;
+        &:hover {
+            color: #FF9900;
+            &::before{
+                content: '';
+                background-color: #FF9900;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+            }
+        }
+    }
+}

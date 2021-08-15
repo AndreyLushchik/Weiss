@@ -1,0 +1,29 @@
+.logo {
+    position: relative;
+    @include nonelink;
+    color: #263640;
+    font-family: $din;
+    font-size: 28px;    
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding: 12px 0 0;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 22px;
+        height: 5px;
+        transform: translateX(-45%);
+        top: 0;
+        background-color: #FF9900;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        width: 17px;
+        height: 5px;
+        right: -18px;
+        top: 11px;
+        background-color: #FF9900;
+        transform: rotate(90deg);
+    }
+}
