@@ -1,1 +1,1 @@
-https://gurder56.github.io/Weiss/
+https://AndreyLushchik.github.io/Weiss/
